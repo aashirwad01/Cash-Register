@@ -75,4 +75,23 @@ button{
     border-collapse: collapse;
     padding: 0.4rem;
   }
+  footer p {
+    margin-top: 15%;
+    font-size: large;
+    text-align: center;
+  }
   
+  .footer-list {
+    margin-top: 1rem;
+  }
+  
+  a,
+  img,
+  li {
+    display: inline;
+  }
+  
+  .img-2 {
+    width: 30px;
+    padding: 0.1rem;
+  }
