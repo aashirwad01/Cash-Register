@@ -49,6 +49,14 @@ btncheck.addEventListener("click",function checkbill()
        
 
     }
+    else if(bill.value<0 || cash.value<0){
+        error.style.display="block";
+        
+        error.style.color="red";
+        error.innerHTML="Please enter positive numerical values";
+       
+
+    }
 
     else{
         error.style.display="block";
