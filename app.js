@@ -15,7 +15,7 @@ btnclear.addEventListener("click",function refresh(){
 btncheck.addEventListener("click",function checkbill()
 {
 
-    console.log(bill.value,cash.value,"values ",typeof(bill.value));
+    
     if(bill.value.length==0 || cash.value.length==0)
     {
         error.style.display="block";
@@ -51,8 +51,11 @@ btncheck.addEventListener("click",function checkbill()
     }
 
     else{
-
+        error.style.display="block";
+        error.style.color="purple";
+        
         var amt=parseInt(cash.value)-parseInt(bill.value);
+        error.innerHTML="Amount to be Returned is "+amt+" Rs";
         for(var i=0;i<notesavailable.length;i++){
             var n=Math.trunc(amt/notesavailable[i]);
             amt=amt%notesavailable[i];
