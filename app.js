@@ -21,7 +21,11 @@ btncheck.addEventListener("click",function checkbill()
         error.style.display="block";
         error.style.color="red";
         error.innerHTML="Please enter proper values";
-       
+        for(var i=0;i<notesavailable.length;i++){
+           
+           
+            notes[i].innerText="";
+        }
 
     }
 
@@ -30,7 +34,11 @@ btncheck.addEventListener("click",function checkbill()
         error.style.display="block";
         error.style.color="red";
         error.innerHTML="Please enter numerical values";
-       
+        for(var i=0;i<notesavailable.length;i++){
+           
+           
+            notes[i].innerText="";
+        }
 
     }
     else if(parseInt(bill.value)<0 || parseInt(cash.value)<0){
@@ -38,6 +46,11 @@ btncheck.addEventListener("click",function checkbill()
         
         error.style.color="red";
         error.innerHTML="Please enter positive numerical values";
+        for(var i=0;i<notesavailable.length;i++){
+           
+           
+            notes[i].innerText="";
+        }
        
 
     }
@@ -45,7 +58,11 @@ btncheck.addEventListener("click",function checkbill()
         error.style.display="block";
         error.style.color="blue";
         error.innerHTML="Please give remaining Bill Amount "+(bill.value-cash.value)+" Rs";
-        console.log("hehea");
+        for(var i=0;i<notesavailable.length;i++){
+           
+           
+            notes[i].innerText="";
+        }
     }
 
     
@@ -55,7 +72,11 @@ btncheck.addEventListener("click",function checkbill()
         
         error.style.color="rgb(14, 58, 14)";
         error.innerHTML="Amount Paid. Thank You for Visiting. Have a Nice Day."
-       
+        for(var i=0;i<notesavailable.length;i++){
+           
+           
+            notes[i].innerText="";
+        }
 
     }
 
