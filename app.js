@@ -33,13 +33,22 @@ btncheck.addEventListener("click",function checkbill()
        
 
     }
+    else if(parseInt(bill.value)<0 || parseInt(cash.value)<0){
+        error.style.display="block";
+        
+        error.style.color="red";
+        error.innerHTML="Please enter positive numerical values";
+       
 
+    }
     else if(parseInt(bill.value) > parseInt(cash.value)){
         error.style.display="block";
         error.style.color="blue";
         error.innerHTML="Please give remaining Bill Amount "+(bill.value-cash.value)+" Rs";
         console.log("hehea");
     }
+
+    
 
     else if(bill.value===cash.value){
         error.style.display="block";
@@ -49,14 +58,8 @@ btncheck.addEventListener("click",function checkbill()
        
 
     }
-    else if(parseInt(bill.value)<0 || parseInt(cash.value)<0){
-        error.style.display="block";
-        
-        error.style.color="red";
-        error.innerHTML="Please enter positive numerical values";
-       
 
-    }
+    
 
     else{
         error.style.display="block";
