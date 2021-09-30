@@ -49,7 +49,7 @@ btncheck.addEventListener("click",function checkbill()
        
 
     }
-    else if(bill.value<0 || cash.value<0){
+    else if(parseInt(bill.value)<0 || parseInt(cash.value)<0){
         error.style.display="block";
         
         error.style.color="red";
