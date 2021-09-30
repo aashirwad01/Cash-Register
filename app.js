@@ -57,7 +57,7 @@ btncheck.addEventListener("click",function checkbill()
     else if(parseInt(bill.value) > parseInt(cash.value)){
         error.style.display="block";
         error.style.color="blue";
-        error.innerHTML="Please give remaining Bill Amount "+(bill.value-cash.value)+" Rs";
+        error.innerHTML="Please give required Bill Amount "+(bill.value-cash.value)+" Rs";
         for(var i=0;i<notesavailable.length;i++){
            
            
